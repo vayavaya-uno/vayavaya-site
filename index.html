@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VayaVaya | Professional COJ & Eskom Specialists</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="data/vaya-vaya-logo.png" alt="Vaya Vaya">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html" class="nav-cta">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-box">
+                    <h1 class="heroTitle">
+                        Save thousands on your <br>
+                        <span id="alternating-text" class="white-text">Municipal Bills</span>
+                    </h1>
+                    <p class="heroSubtitle">Instant, online municipal services designed to save you time and money. Never engage with the City of Joburg ever again.</p>
+                    
+                    <div class="ctaButtons">
+                        <a href="pricing.html" class="primaryCta">START FROM R99/MONTH</a>
+                        <a href="contact.html" class="secondaryCta">Contact Specialist</a>
+                    </div>
+
+                    <div class="wa-action-card">
+                        <div class="wa-content">
+                            <span class="wa-status-dot"></span>
+                            <div class="wa-text">
+                                <strong>Need help immediately?</strong>
+                                <span>Specialists are online now.</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/27660004829" class="wa-link-btn">
+                            💬 WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="urgency-bar">
+            <div class="container urgency-grid">
+                <div class="urgency-item">
+                    <h4>Service disconnections</h4>
+                    <p>happen in 5 days</p>
+                </div>
+                <div class="urgency-item">
+                    <h4>Building permits</h4>
+                    <p>expire without follow-up</p>
+                </div>
+                <div class="urgency-item">
+                    <h4>Billing errors</h4>
+                    <p>compound monthly</p>
+                </div>
+                <div class="urgency-item">
+                    <h4>Lost applications</h4>
+                    <p>restart timelines</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section white-bg">
+            <div class="container">
+                <h2 class="sectionTitle">Expert Municipal Solutions</h2>
+                <div class="servicesGrid">
+                    <div class="serviceCard">
+                        <div class="icon-circle">💧</div>
+                        <h3>Billing Resolution</h3>
+                        <p>Resolving incorrect water, power, and property valuation charges through formal dispute channels.</p>
+                    </div>
+                    <div class="serviceCard">
+                        <div class="icon-circle">🔌</div>
+                        <h3>Eskom & COJ</h3>
+                        <p>Professional management of opening and closing municipal accounts to ensure zero residual debt.</p>
+                    </div>
+                    <div class="serviceCard">
+                        <div class="icon-circle">🏗️</div>
+                        <h3>Building Permits</h3>
+                        <p>End-to-end management of municipal approvals, plan submissions, and diligent follow-ups.</p>
+                    </div>
+                    <div class="serviceCard">
+                        <div class="icon-circle">🏡</div>
+                        <h3>Property Valuations</h3>
+                        <p>Formal objections to municipal property valuations to lower your monthly rates and taxes.</p>
+                    </div>
+                    <div class="serviceCard">
+                        <div class="icon-circle">💰</div>
+                        <h3>Refund Management</h3>
+                        <p>Recovering credits and overpayments from closed or active accounts that the City is withholding.</p>
+                    </div>
+                    <div class="serviceCard">
+                        <div class="icon-circle">📟</div>
+                        <h3>Prepaid Conversions</h3>
+                        <p>Fast-tracked switching from post-paid to prepaid water and electricity meters for better control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="data/vaya-vaya-logo.png" alt="Vaya Vaya" width="120">
+            <p class="copyright">&copy; 2026 VayaVaya (Pty) Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const textElement = document.getElementById('alternating-text');
+        const phrases = ['Water Bill', 'Electricity Bill', 'Property Valuation', 'COJ Disputes', 'Eskom Accounts'];
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % phrases.length;
+            textElement.style.opacity = 0;
+            setTimeout(() => {
+                textElement.innerText = phrases[index];
+                textElement.style.opacity = 1;
+            }, 500);
+        }, 3000);
+    </script>
+</body>
+</html>

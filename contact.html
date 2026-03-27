@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | VayaVaya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="data/vaya-vaya-logo.png" alt="Vaya Vaya"></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html" class="nav-cta">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section gray-bg">
+        <div class="container">
+            <h1 class="sectionTitle">Get Expert Help</h1>
+            
+            <div class="contact-container">
+                <div class="contact-form-side">
+                    <h3>Send an Inquiry</h3>
+                    <p>Tell us what's happening with your account.</p>
+                    <form action="https://formspree.io/f/mjgpvdkn" method="POST" class="styled-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Account Number (Optional)</label>
+                            <input type="text" name="account" placeholder="e.g. 201948573">
+                        </div>
+                        <div class="form-group">
+                            <label>Issue Category</label>
+                            <select name="category">
+                                <option>Billing Dispute</option>
+                                <option>Account Opening/Closing</option>
+                                <option>Building Permits</option>
+                                <option>Property Valuation</option>
+                                <option>Refund Claim</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="4" placeholder="Briefly describe the error or dispute..."></textarea>
+                        </div>
+                        <button type="submit" class="primaryCta" style="width:100%; border:none;">SUBMIT INQUIRY</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-side">
+                    <div class="info-card">
+                        <h3>Urgent?</h3>
+                        <p>Service disconnections are handled with 2-hour priority on WhatsApp.</p>
+                        <a href="https://wa.me/27660004829" class="wa-link-btn" style="display:inline-block; margin-top:15px;">💬 WhatsApp Now</a>
+                    </div>
+                    <div class="info-details">
+                        <h4>Direct Channels</h4>
+                        <p>📧 hello@vayavaya.co.za</p>
+                        <p>📍 Johannesburg, South Africa</p>
+                        <br>
+                        <h4>Office Hours</h4>
+                        <p>Mon-Fri: 08:00 — 17:00</p>
+                        <p>Sat: 09:00 — 13:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2026 VayaVaya (Pty) Ltd.</p></div>
+    </footer>
+
+</body>
+</html>
